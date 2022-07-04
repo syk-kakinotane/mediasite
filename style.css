@@ -1,0 +1,240 @@
+body {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.bg-gray{
+    background: #000;
+    opacity: .8;
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+  
+.hamburger span:nth-child(1) {
+    top: 4px;
+}
+  
+.hamburger span:nth-child(2) {
+    top: 14px;
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 4px;
+}
+
+.closeBtn span:nth-child(1) {
+    top: 20px;
+    right: 0;
+    background: #fff;
+    transform: rotate(-45deg);
+    position: relative;
+    z-index: 20;
+}
+.closeBtn span:nth-child(2){
+    opacity: 0;
+}
+
+.closeBtn span:nth-child(3) {
+    top: 20px;
+    right: 0;
+    background: #fff;
+    transform: rotate(45deg);
+    position: relative;
+    z-index: 20;
+}
+
+
+.navi{
+    left: 0;
+    top:0;
+    padding: 60px 25px;
+    width: 300px;
+    height: 100%;
+    background-color: #121212;
+    color: #fff;
+    position: fixed;
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navi.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mask{
+    display: none;
+}
+.mask.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;    
+    z-index: 10;
+    cursor: pointer;
+}
+
+.naviMenu {
+    margin-bottom: 60px;
+    border-top: solid 1px #fff;
+}
+
+.naviMenu .naviItem{
+    padding: 20px 0;
+    border-bottom: solid 1px #fff;
+}
+
+.naviSNS .naviItem{
+    padding: 5px 0;
+}
+
+.main{
+    padding-top: 80px;
+}
+
+.bgVideo{
+    width: 100%;
+}
+
+.slickItem{
+    padding: 0 30px;
+}
+
+.sec-title {
+    font-size: 2.25rem;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.feature{
+    max-width: 1260px;
+    margin:0 auto;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.featureItem {
+    box-shadow: 0 0 8px 4px #ccc;
+}
+
+.itemContent{
+    padding: 30px;
+}
+
+.itemCat{
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+
+.itemText{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.itemDate{
+    font-size: 0.75rem;
+    text-align: right;
+}
+
+.footer{
+    background-color: #121212;
+    color: #fff;
+    padding:10px 0 10px 0;
+}
+
+.footerContainer{
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footerTitle{
+    font-size: 2.25rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footerLeft{
+    width: 45%;
+}
+
+.footerRight{
+    width: 45%;
+}
+
+.inputInfo{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px
+}
+
+.footerLeft p{
+    margin-bottom: 30px;
+}
+
+.sendButton{
+    width: 200px;
+    color: #fff;
+    background-color: #121212;
+    border: solid 1px #fff;
+    padding: 12px 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.copyright{
+    font-size: 0.5rem;
+    text-align: center;
+    margin-top: 50px;
+}
