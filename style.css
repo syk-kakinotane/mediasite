@@ -152,11 +152,12 @@ body {
 .feature{
     max-width: 1260px;
     margin:0 auto;
+    padding: 0 16px;
 
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin-bottom: 50px;
 }
@@ -195,6 +196,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 .footerTitle{
@@ -237,4 +239,19 @@ body {
     font-size: 0.5rem;
     text-align: center;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .footerContainer{
+        flex-direction: column;
+    }
+
+    .footerLeft{
+        width: 100%;
+    }
+
+    .footerRight{
+        width: 100%;
+    }
+
 }
